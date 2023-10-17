@@ -4,47 +4,113 @@ import Hero from "@/components/hero";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center justify-center bg-primary">
+      <main className="flex min-h-screen w-full flex-col items-center bg-blue-500">
 
-        <Hero className={"h-5/6"}></Hero>
+          <div className="navbar bg-base-100">
+              <div className="navbar-start">
+                  <div className="dropdown">
+                      <label tabIndex={0} className="btn btn-ghost btn-circle">
+                          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+                      </label>
+                      <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                          <li><a>Homepage</a></li>
+                          <li><a>Portfolio</a></li>
+                          <li><a>About</a></li>
+                      </ul>
+                  </div>
+              </div>
+              <div className="navbar-center">
+                  <a className="btn btn-ghost normal-case text-xl">Software engineering readiness club</a>
+              </div>
+              <div className="navbar-end">
+                  <button className="btn btn-ghost btn-circle">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                  </button>
+                  <button className="btn btn-ghost btn-circle">
+                      <div className="indicator">
+                          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" /></svg>
+                          <span className="badge badge-xs badge-primary indicator-item"></span>
+                      </div>
+                  </button>
+              </div>
+          </div>
 
-        {/*<Hero></Hero>*/}
+          <div className="w-full">
 
-        {/*/!*<div className="hero min-h-screen" style={{ backgroundImage: `url("/gradient2.png")` }}>*!/*/}
-        {/*<div className="hero h-screen" style={{ backgroundImage: `url("/gradient2.png")` }}>*/}
+              <Hero className={"min-h-screen h-full"}></Hero>
+              {/*<div className={"bg-white h-[250rem] w-full flex justify-center py-32"}>*/}
+              <div className={"bg-white w-full flex justify-center py-32"}>
 
-        {/*    /!*<div className="relative p-16 w-1/2 flex items-center justify-center">*!/*/}
-        {/*    /!*    /!*<div className="absolute inset-0 bg-[rgba(0,0,0,0.2)] backdrop-blur-2xl rounded-lg p-10 flex flex-col items-center justify-center">*!/*!/*/}
-        {/*    /!*    <div className="absolute inset-0 bg-[rgba(240,240,240,240.2)] backdrop-blur-sm p-10 flex flex-col items-center justify-center">*!/*/}
-        {/*    /!*        <div className="text-9xl font-bold text-white text-center z-10">*!/*/}
-        {/*    /!*            SERC*!/*/}
-        {/*    /!*        </div>*!/*/}
-        {/*    /!*    </div>*!/*/}
-        {/*    /!*</div>*!/*/}
+                  <div className={"w-11/12 max-w-[1500px] grid grid-rows-3 gap-3.5"}>
+                      <div className={"row-start-1"}>
+                          <div className="bg-base-100 w-full h-[27rem] rounded-3xl p-16 flex items-center">
+                              <div className="avatar">
+                                  <div className="w-72 rounded">
+                                      <img src="https://v2.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                                  </div>
+                              </div>
+
+                              <div className={"ml-8 h-full py-8 prose lg:prose-md"}>
+                                  <h1>
+                                      Person
+                                  </h1>
+
+                                  <p>
+                                      This is a person who is in the club
+                                  </p>
+                              </div>
+
+                          </div>
+                      </div>
+
+                      <div className={"row-start-2"}>
+                          <div className="bg-base-100 w-full h-[27rem] rounded-3xl p-16 flex items-center flex-row-reverse justify-between">
+                              <div className="avatar">
+                                  <div className="w-72 rounded">
+                                      <img src="https://v2.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                                  </div>
+                              </div>
+
+                              <div className={"ml-8 h-full py-8 prose lg:prose-md"}>
+                                  <h1>
+                                      Person
+                                  </h1>
+
+                                  <p>
+                                      This is a person who is in the club
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div className={"row-start-3"}>
+                          <div className="bg-base-100 w-full h-[27rem] rounded-3xl p-16 flex items-center">
+                              <div className="avatar">
+                                  <div className="w-72 rounded">
+                                      <img src="https://v2.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                                  </div>
+                              </div>
+
+                              <div className={"ml-8 h-full py-8 prose lg:prose-md"}>
+                                  <h1>
+                                      Person
+                                  </h1>
+
+                                  <p>
+                                      This is a person who is in the club
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
 
 
-        {/*    /!*<div className={"hero-content bg-[#00ffffffff] flex flex-col items-center justify-center max-w-xl pr-16 bg-orange-500 border-4 border-white"}>*!/*/}
-        {/*    <div className={"hero-content bg-[#00ffffffff] flex flex-col items-center justify-center border-4 border-white overflow-clip"}>*/}
-        {/*        /!*<div className={"flex flex-col text-[11rem] italic tracking-tighter items-center justify-center -mt-20 mb-20"}>*!/*/}
-        {/*        <div className={"flex flex-col text-[15rem] italic tracking-tighter items-center justify-center -ml-10 -mt-20 py-5 scroll-pr-3.5"}>*/}
-        {/*            <div className="text-white font-bold text-center z-10">*/}
-        {/*                SERC*/}
-        {/*            </div>*/}
 
-        {/*            /!*<div className={"ml-32 -mt-14"}>*!/*/}
-        {/*            <div className={"ml-6 -mt-14"}>*/}
-        {/*                <svg width="628" height={"184"} xmlns="http://www.w3.org/2000/svg">*/}
-        {/*                    <text x={"-5"} y="179" fill="none" stroke="white" stroke-width="3" font-weight="800">*/}
-        {/*                        SERC*/}
-        {/*                    </text>*/}
-        {/*                </svg>*/}
-        {/*            </div>*/}
 
-        {/*        </div>*/}
-        {/*    </div>*/}
+              </div>
+          </div>
 
-        {/*</div>*/}
 
-    </main>
+      </main>
   )
 }
