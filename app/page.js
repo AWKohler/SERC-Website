@@ -7,13 +7,11 @@ export default function Home() {
   return (
       <main className="flex min-h-screen w-full flex-col items-center bg-blue-500">
 
-
           <Navbar></Navbar>
 
           <div className="w-full">
 
               <Hero className={"min-h-screen h-full"}></Hero>
-              {/*<div className={"bg-white h-[250rem] w-full flex justify-center py-32"}>*/}
               <div className={"bg-white w-full flex justify-center py-32"}>
 
                   <div className={"w-11/12 max-w-[1500px] grid grid-rows-3 gap-3.5"}>
@@ -78,9 +76,6 @@ export default function Home() {
                           </div>
                       </div>
                   </div>
-
-
-
 
               </div>
           </div>
