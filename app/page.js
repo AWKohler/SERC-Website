@@ -1,100 +1,49 @@
 import Image from 'next/image'
+import Hero from "@/components/hero";
 // import bgImage from '/gradient.png';
 
 export default function Home() {
   return (
-    // <main className="flex flex-col items-center justify-center p-24 bg-gray-700">
     <main className="flex flex-col items-center justify-center bg-primary">
 
-        {/*<div className="hero min-h-screen" style={{backgroundImage: 'url(https://daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg)'}}>*/}
-        <div className="hero min-h-screen" style={{ backgroundImage: `url("/gradient.png")` }}>
-        {/*<div className="hero min-h-screen" style={{backgroundImage: bgImage}}>*/}
-        {/*    <div className="hero-overlay bg-opacity-60"></div>*/}
-        {/*    <div className="hero-content text-center text-neutral-content">*/}
-        {/*        <div className="max-w-md">*/}
-        {/*            <h1 className="mb-5 text-5xl font-bold">Hello there</h1>*/}
-        {/*            <p className="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>*/}
-        {/*            <button className="btn btn-primary">Get Started</button>*/}
-        {/*        </div>*/}
-        {/*    </div>*/}
+        <Hero className={"h-5/6"}></Hero>
 
-            {/*<div className={"hero-content bg-[#00ffffffff] p-4 pr-16 "}>*/}
-            <div className={"hero-content bg-[#00ffffffff] p-4 pr-16 flex flex-col items-center justify-center"}>
-                {/*<div className={"flex flex-col text-[11rem] italic tracking-tighter"}>*/}
-                <div className={"flex flex-col text-[11rem] italic tracking-tighter items-center justify-center"}>
-                    {/*<div className="text-white absolute font-bold text-center z-10">*/}
-                    <div className="text-white font-bold text-center z-10">
-                        SERC
-                    </div>
+        {/*<Hero></Hero>*/}
 
-                    {/*<div className={"flex flex-col justify-center items-center text-center font-bold mt-28"}>*/}
-                    {/*    <div className="tfixed">*/}
-                    {/*        SERC*/}
-                    {/*    </div>*/}
-                    {/*    /!*<div className="text-gray-700 absolute">*!/*/}
-                    {/*    <div className="bg-[#00ffffffff] absolute">*/}
-                    {/*        SERC*/}
-                    {/*    </div>*/}
-                    {/*</div>*/}
+        {/*/!*<div className="hero min-h-screen" style={{ backgroundImage: `url("/gradient2.png")` }}>*!/*/}
+        {/*<div className="hero h-screen" style={{ backgroundImage: `url("/gradient2.png")` }}>*/}
+
+        {/*    /!*<div className="relative p-16 w-1/2 flex items-center justify-center">*!/*/}
+        {/*    /!*    /!*<div className="absolute inset-0 bg-[rgba(0,0,0,0.2)] backdrop-blur-2xl rounded-lg p-10 flex flex-col items-center justify-center">*!/*!/*/}
+        {/*    /!*    <div className="absolute inset-0 bg-[rgba(240,240,240,240.2)] backdrop-blur-sm p-10 flex flex-col items-center justify-center">*!/*/}
+        {/*    /!*        <div className="text-9xl font-bold text-white text-center z-10">*!/*/}
+        {/*    /!*            SERC*!/*/}
+        {/*    /!*        </div>*!/*/}
+        {/*    /!*    </div>*!/*/}
+        {/*    /!*</div>*!/*/}
 
 
-
-                    <div className={"ml-32 mt-72"}>
-                        <svg width="600" xmlns="http://www.w3.org/2000/svg">
-                            <text y="135" fill="none" stroke="white" stroke-width="3" font-weight="800">
-                                SERC
-                            </text>
-                        </svg>
-                    </div>
-
-                    {/*<svg width="600" xmlns="http://www.w3.org/2000/svg">*/}
-                    {/*    <text y="135" fill="none" stroke="white" stroke-width="3" font-weight="800">*/}
-                    {/*        SERC*/}
-                    {/*    </text>*/}
-                    {/*</svg>*/}
-
-
-                    {/*<svg width="308" height="104" viewBox="0 0 308 104" xmlns="http://www.w3.org/2000/svg">*/}
-                    {/*    <text x="0" y="120" fill="none" stroke="white" stroke-width="3" font-weight="800">SERC</text>*/}
-                    {/*</svg>*/}
-
-                </div>
-            </div>
-        </div>
-
-        {/*<div className={"bg-red-500 p-4 pr-16"}>*/}
-        {/*    <div className={"flex flex-col text-[11rem] italic tracking-tighter"}>*/}
-        {/*        <div className="text-white absolute font-bold text-center z-10">*/}
-        {/*            SERC*/}
-        {/*        </div>*/}
-
-        {/*        <div className={"flex flex-col justify-center items-center text-center font-bold mt-28"}>*/}
-        {/*            <div className="tfixed">*/}
+        {/*    /!*<div className={"hero-content bg-[#00ffffffff] flex flex-col items-center justify-center max-w-xl pr-16 bg-orange-500 border-4 border-white"}>*!/*/}
+        {/*    <div className={"hero-content bg-[#00ffffffff] flex flex-col items-center justify-center border-4 border-white overflow-clip"}>*/}
+        {/*        /!*<div className={"flex flex-col text-[11rem] italic tracking-tighter items-center justify-center -mt-20 mb-20"}>*!/*/}
+        {/*        <div className={"flex flex-col text-[15rem] italic tracking-tighter items-center justify-center -ml-10 -mt-20 py-5 scroll-pr-3.5"}>*/}
+        {/*            <div className="text-white font-bold text-center z-10">*/}
         {/*                SERC*/}
         {/*            </div>*/}
-        {/*            /!*<div className="text-gray-700 absolute">*!/*/}
-        {/*            <div className="text-red-500 absolute">*/}
-        {/*                SERC*/}
+
+        {/*            /!*<div className={"ml-32 -mt-14"}>*!/*/}
+        {/*            <div className={"ml-6 -mt-14"}>*/}
+        {/*                <svg width="628" height={"184"} xmlns="http://www.w3.org/2000/svg">*/}
+        {/*                    <text x={"-5"} y="179" fill="none" stroke="white" stroke-width="3" font-weight="800">*/}
+        {/*                        SERC*/}
+        {/*                    </text>*/}
+        {/*                </svg>*/}
         {/*            </div>*/}
+
         {/*        </div>*/}
-
-        {/*        /!*<div className={"z-10"}>*!/*/}
-        {/*        /!*    <svg width="308" height="104" viewBox="0 0 308 104" xmlns="http://www.w3.org/2000/svg">*!/*/}
-        {/*        /!*        <text x="0" y="90" fill="none" stroke="white" stroke-width="3" font-weight="800">2022</text>*!/*/}
-        {/*        /!*    </svg>*!/*/}
-        {/*        /!*</div>*!/*/}
         {/*    </div>*/}
-
-            {/*<svg width="308" height="104" viewBox="0 0 308 104" xmlns="http://www.w3.org/2000/svg">*/}
-            {/*    /!*<text x="0" y="90" fill="none" stroke="white" stroke-width="3" font-family="Noto Sans" font-size="100px" font-weight="800">2022</text>*!/*/}
-            {/*    <text x="0" y="90" fill="none" stroke="white" stroke-width="3" font-weight="800">2022</text>*/}
-            {/*</svg>*/}
 
         {/*</div>*/}
-
-
-
-
 
     </main>
   )
