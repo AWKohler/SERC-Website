@@ -5,7 +5,7 @@ import Navbar from "@/components/navbar";
 
 export default function Home() {
   return (
-      <main className="flex min-h-screen w-full flex-col items-center bg-blue-500">
+      <main className="flex min-h-screen w-full flex-col items-center overflow-clip">
 
           <Navbar></Navbar>
 

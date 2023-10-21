@@ -10,7 +10,8 @@ export default function Hero() {
 
                     <div className={"ml-6 -mt-14 text-base-100 stroke-base-100"}>
                         <svg width="628" height={"184"} xmlns="http://www.w3.org/2000/svg">
-                            <text x={"-5"} y="179" fill="none" stroke-width="5" font-weight="800">
+                            {/*<text x={"-5"} y="179" fill="none" stroke-width="5" font-weight="800">*/}
+                            <text x={"-5"} y="179" fill="none" strokeWidth="5" fontWeight="800">
                                 SERC
                             </text>
                         </svg>
