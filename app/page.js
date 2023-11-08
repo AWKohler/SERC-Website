@@ -1,23 +1,9 @@
-'use client'
-import Image from 'next/image'
 import Hero from "@/components/hero";
-import Navbar from "@/components/navbar";
-import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
-import Projects from "@/pages/projects";
-// import bgImage from '/gradient.png';
-export default function App(){
-    return(<Router>
-        <Navbar />
-        <Routes>
-            <Route path='/' element={<Home />}/>
-            <Route path="projects" element={<Projects />}></Route>
-        </Routes>
-    </Router>
-    );
-}
-export function Home() {
+
+export default function Home() {
   return (
       <main className="flex min-h-screen w-full flex-col items-center overflow-clip">
+
           <div className="w-full">
 
               <Hero className={"min-h-screen h-full"}></Hero>
@@ -37,10 +23,14 @@ export function Home() {
                                       Person
                                   </h1>
 
+
                                   <p>
                                       This is a person who is in da club
                                   </p>
+                                  {/*<a href={"/projects"}/>*/}
                               </div>
+
+                              <a href={"/projects"}>link</a>
 
                           </div>
                       </div>
