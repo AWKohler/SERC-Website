@@ -27,3 +27,75 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+
+/*
+Classes for the projects page
+*/
+main {
+  height:400px;
+ padding: 80px;
+  padding-left:200px;
+  padding-right:200px;
+  text-align:center;
+}
+
+.titles {
+  font-size:45px;
+  font-family:'Courier New', Courier, monospace;
+  
+}
+
+.grid-container-element { 
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  grid-gap: 350px; 
+  width: 100%; 
+} 
+.grid-child-element { 
+  margin: 50px;  
+}
+
+.text {
+  color:black;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size:16px;
+}
+
+nav {
+  background-color:rgba(0, 0, 0, 0.5);
+  padding-top:14px;
+  padding-bottom:14px;
+
+  text-align: center;
+  color:white;
+}
+
+nav a {
+  color:white;
+  font-size:18px;
+  text-decoration:none;
+
+  padding-left:20px;
+  padding-right:20px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  justify-content:left;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
