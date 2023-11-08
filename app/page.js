@@ -1,13 +1,8 @@
-import Image from 'next/image'
 import Hero from "@/components/hero";
-import Navbar from "@/components/navbar";
-// import bgImage from '/gradient.png';
 
 export default function Home() {
   return (
       <main className="flex min-h-screen w-full flex-col items-center overflow-clip">
-
-          <Navbar></Navbar>
 
           <div className="w-full">
 
@@ -28,10 +23,14 @@ export default function Home() {
                                       Person
                                   </h1>
 
+
                                   <p>
                                       This is a person who is in da club
                                   </p>
+                                  {/*<a href={"/projects"}/>*/}
                               </div>
+
+                              <a href={"/projects"}>link</a>
 
                           </div>
                       </div>
