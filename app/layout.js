@@ -22,6 +22,7 @@ export default function RootLayout({ children }) {
               {/*<script type="application/javascript" dangerouslySetInnerHTML={{ __html: `function loadScript() { var head = document.getElementsByTagName('head')[0]; var script = document.createElement('script'); script.type = 'text/javascript'; script.src = "https://test-resources.vercel.app/embedchat.js"; script.setAttribute('data-id', "clqcmst850003umgxmzets2ou"); script.id = "embedchat"; head.appendChild(script); } if (!location.href.includes("ai-demo-my-chatbot")) { loadScript(); }`}}>*/}
               {/*</script>*/}
 
+
               <script type="application/javascript" dangerouslySetInnerHTML={{ __html: `
               	function loadScript() {
               	  var head = document.getElementsByTagName('head')[0];
