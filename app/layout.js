@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
               	  var script = document.createElement('script');
               	  script.type = 'text/javascript';
               	  script.src = "https://test-resources.vercel.app/embedchat.js";
-              	  script.setAttribute('data-id', "clqcmst850003umgxmzets2ou");
+              	  script.setAttribute('data-id', "clrnuu3yo0001l408ppnmat73");
               	  script.id = "embedchat";
               	  head.appendChild(script);
               	}
